@@ -39,14 +39,13 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p500/proprietary/lib/libqueue.so:system/lib/libqueue.so \
     vendor/lge/p500/proprietary/lib/liblgerft.so:system/lib/liblgerft.so \
     vendor/lge/p500/proprietary/lib/libdss.so:system/lib/libdss.so \
+    vendor/lge/p500/proprietary/lib/libdll.so:system/lib/libdll.so \
     vendor/lge/p500/proprietary/lib/libbcmwl.so:system/lib/libbcmwl.so \
     vendor/lge/p500/proprietary/lib/libwmsts.so:system/lib/libwmsts.so \
     vendor/lge/p500/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
     vendor/lge/p500/proprietary/lib/libidl.so:system/lib/libidl.so \
     vendor/lge/p500/proprietary/lib/liblgdrm.so:system/lib/liblgdrm.so \
     vendor/lge/p500/proprietary/lib/libsnd.so:system/lib/libsnd.so \
-    vendor/lge/p500/proprietary/lib/libril.so:obj/lib/libril.so \
-    vendor/lge/p500/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/lge/p500/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/lge/p500/proprietary/etc/flex/flex.xml:system/etc/flex/flex.xml
 
@@ -67,8 +66,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p500/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
     vendor/lge/p500/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
     vendor/lge/p500/proprietary/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
-    vendor/lge/p500/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
-    vendor/lge/p500/proprietary/lib/hw/copybit.thunderg.so:system/lib/hw/copybit.msm7k.so 
+    vendor/lge/p500/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw
 
 ## Sensors
 PRODUCT_COPY_FILES += \
@@ -76,7 +74,6 @@ PRODUCT_COPY_FILES += \
 
 ## OMX
 PRODUCT_COPY_FILES += \
-    vendor/lge/p500/proprietary/lib/libOmxCore.so:system/lib/libOmxCore.so \
     vendor/lge/p500/proprietary/lib/libOmxAacDec.so:system/lib/libOmxAacDec.so \
     vendor/lge/p500/proprietary/lib/libOmxAacEnc.so:system/lib/libOmxAacEnc.so \
     vendor/lge/p500/proprietary/lib/libOmxAdpcmDec.so:system/lib/libOmxAdpcmDec.so \
@@ -98,6 +95,11 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p500/proprietary/lib/libmm-adspsvc.so:system/lib/libmm-adspsvc.so \
     vendor/lge/p500/proprietary/lib/libdivxdrmdecrypt.so:system/lib/libdivxdrmdecrypt.so
 
+## Camera
+PRODUCT_COPY_FILES += \
+    vendor/lge/p500/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
+    vendor/lge/p500/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
+    vendor/lge/p500/proprietary/lib/libmmipl.so:system/lib/libmmipl.so
 
 ## BT
 PRODUCT_COPY_FILES += \
@@ -107,9 +109,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/lge/p500/proprietary/etc/wl/rtecdc.bin:system/etc/wl/rtecdc.bin \
     vendor/lge/p500/proprietary/etc/wl/rtecdc-apsta.bin:system/etc/wl/rtecdc-apsta.bin
-
-# Camera
-PRODUCT_COPY_FILES += \
-    vendor/lge/p500/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
-    vendor/lge/p500/proprietary/lib/libmmipl.so:system/lib/libmmipl.so \
-    vendor/lge/p500/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so
